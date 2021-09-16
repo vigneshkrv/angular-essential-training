@@ -1,7 +1,7 @@
 <h2>{{ mediaItem.name }}</h2>
 <!-- <div *ngIf="mediaItem.watchedOn">Watched on {{ mediaItem.watchedOn }}</div> -->
-<ng-template>
-  <div [ngIf]="mediaItem.watchedOn">Watched on {{ mediaItem.watchedOn }}</div>
+<ng-template [ngIf]="mediaItem.watchedOn">
+  <div>Watched on {{ mediaItem.watchedOn }}</div>
 </ng-template>
 
 <div>{{ mediaItem.category }}</div>
